@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar CEP</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+      <div class="container">
+        <h2>Digite o CEP </h2>
+        <span>(somente números)</span>
+                
+        <form id="form" class="form">
+            <input type="number" 
+            id="campo-cep" 
+            class="cep" 
+            autocomplete="off" 
+            placeholder="Ex.: 69000123" 
+            maxlength="8">
+            <button type="submit" id="buscar-cep" class="botao">Consultar</button>              
+        </form>
+        <div id="resultado" class="texto esconde-campo">resultado</div>
+      </div>     
+      <script src="main.js"></script>
+</body>
+</html>

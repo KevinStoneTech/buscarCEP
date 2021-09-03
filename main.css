@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body {
+  margin: 0;
+  background: linear-gradient(45deg, #1ed17d 50%, #08abe6 50%);
+  color: #fff;
+  opacity: 0.95;
+  font-family: 'Ubuntu', sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+h2 {
+  font-size: 32px;
+  color: #155e6d;
+  font-weight: 900;
+  margin-bottom: 0.1rem;
+}
+span {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+.form {
+  margin: 20px 0;
+  width: 180px;
+  display: flex;
+  flex-wrap: wrap;
+}
+input, button {
+  width: 100%;
+}
+.cep {
+  height: auto; 
+  padding: .8rem;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 0.5rem;
+  border-width: 0;
+  color: #155e6d;
+  background-color: #f2f2f2;
+  outline: 0;
+  transition: all .5s ease;
+}
+.cep::placeholder {
+  color: #00d9ff;
+}
+.cep:focus {
+  box-shadow: inset 2px 2px 12px 0px rgba(0, 0, 0, 0.31);
+  transition: all .5s ease;
+}
+.botao {
+  margin-top: .8rem;
+  padding: .8rem 0;
+  font-size: 1.3em;
+  font-weight: 600;
+  background-color: rgba(202, 239, 245, 0.6);
+  color: #155e6d;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  outline: 0;
+  transition: all .5s ease;
+}
+.botao:focus,
+.botao:hover {
+  border: none;
+  background-color: rgba(202, 239, 245, 0.9);
+  transition: all .5s ease;
+}
+.texto {
+  margin: 1rem 0;
+  font-size: 24px;
+  padding: 0.5rem 0;
+  transition: all  ease;
+  text-align: center;
+}
+.esconde-campo {
+  opacity: 0;
+}
